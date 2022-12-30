@@ -27,4 +27,9 @@ public class Configuration {
             return new HttpResponse(exchange.getStatusCodeValue(), exchange.getBody());
         });
     }
+
+    @Bean
+    public ObjectMapper objectMapper(){
+        return new ObjectMapper();
+    }
 }
